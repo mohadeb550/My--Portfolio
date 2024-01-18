@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom"
+import logo from '../assets/my-logo.png'
 
 
 
@@ -6,7 +7,6 @@ import { NavLink } from "react-router-dom"
 export default function Navbar() {
 
   
-
   const navLinks = <>
    <li ><NavLink className={({isActive})=> isActive? ' font-kanit text-[#FFC107] px-3 py-[3px] rounded ': '' } to='/'> Home </NavLink></li>
    <li ><NavLink className={({isActive})=> isActive? ' font-kanit text-[#FFC107] px-3 py-[3px] rounded ': '' } to='/dashboard' state={{ from : {location}}} > About </NavLink></li>
@@ -30,12 +30,12 @@ export default function Navbar() {
 
 
     </div>
-    <div className="flex items-center gap-4 px-8" data-aos="fade-right" data-aos-duration="1000">
-    <img src='https://i.ibb.co/BVRG8Yw/pngwing-com-23.png' className="w-9 md:w-12 lg:w-[50px]"/>
+    <div className="flex items-center gap-4 px-8" data-aos="fade-down" data-aos-duration="1000">
+    <img src={logo} className="w-10 md:w-12 lg:w-[55px]"/>
     <p className="text-[20px]  md:text-xl lg:text-2xl  text-amber-400 font-racing  whitespace-nowrap "> Mohadeb <span className="text-white/80"> Bhowmik </span> </p>
     </div>
   </div>
-  <div className="navbar-center hidden lg:flex gap-24 px-10" data-aos="fade-left" data-aos-duration="1000">
+  <div className="navbar-center hidden lg:flex gap-24 px-10" data-aos="fade-down" data-aos-duration="1000">
     <ul className="flex items-center gap-10 menu-horizontal px-1 text-white/80 ">
       {navLinks}
     </ul>

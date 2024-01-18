@@ -7,12 +7,12 @@ const AboutMe = () => {
     return (
         <div  className="hero h-[1000px] lg:h-[700px] max-w-[1400px] mx-auto font-play flex flex-col md:flex-row justify-around items-center bg-[#242430] pt-20 px-10 md:px-16 md:pb-28 border-t-[1px] border-gray-700" >
 
-        <div className="flex-1 flex justify-center items-center h-full w-full pt-6 md:pt-14" data-aos="fade-up-right" data-aos-duration="1000">
+        <div className="flex-1 flex justify-center items-center h-full w-full pt-6 md:pt-14" data-aos="fade-down" data-aos-duration="1000">
             
             <img src='https://i.ibb.co/nDnGJBS/removal-ai-e6523a13-ad09-4367-aeaf-eb57ec9e6b2c-portrait-smiling-bearded-man-holding-laptop-computer.png' className=" " />
         </div>
     
-        <div className=" text-neutral-content flex-1" data-aos="fade-up-left" data-aos-duration="1000">
+        <div className=" text-neutral-content flex-1" data-aos="fade-down" data-aos-duration="1000">
           <div className="max-w-4xl space-y-2 lg:space-y-5">
             <h1 className=" text-2xl lg:text-4xl  font-racing text-gray-400 my-5 text-left"> About Me🤭</h1>
             <h1 className=" text-3xl lg:text-4xl  font-racing text-amber-400 text-left"> Junior Web Developer: Crafting Digital Marvels</h1>
